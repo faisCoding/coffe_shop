@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css"
+        integrity="sha512-CWRnZlthFAu05mm4Pu5R/ikDV/2jPo6cgmkpdtBFWUY9/mqNFuTmgwnpBWqDiIeMdn5wv1NEQFdt82/Ak+uzkg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/restaurant.png" type="image/x-icon">
+    <title>The Garden Cafe</title>
+</head>
+
+<body>
+
+    <!-- ================================ HEADER ================================================= -->
+    <header class="header">
+        <a href="index.html" class="logo"><i class="ri-store-2-line"></i>The Garden Cafe</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#popular">Popular</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#blogs">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="ri-menu-line"></div>
+            <div id="search-btn" class="ri-search-line"></div>
+            <div id="cart-btn" class="ri-shopping-cart-line"></div>
+            <div id="login-btn" class="ri-user-line"></div>
+        </div>
+    </header>
+
+    <!-- ================================ search form  =========================================== -->
+    <section class="search-form-container">
+        <form action="">
+            <input type="search" name="" id="search-box" placeholder="search here....">
+            <label for="search-box" class="ri-search-line"></label>
+        </form>
+    </section>
+    <!-- ================================  Shopping-cart  ========================================= -->
+    <section class="shopping-cart-container">
+        <div class="products-container">
+            <h3 class="title">your products</h3>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="images/menu-1.png" alt="">
+                    <div class="content">
+                        <h3>delicious food</h3>
+                        <span> Quantity : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span>Price :</span>
+                        <span class="price">$40.00</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="images/menu-2.png" alt="">
+                    <div class="content">
+                        <h3>delicious food</h3>
+                        <span> Quantity : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span>Price :</span>
+                        <span class="price">$40.00</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="images/menu-3.png" alt="">
+                    <div class="content">
+                        <h3>delicious food</h3>
+                        <span> Quantity : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span>Price :</span>
+                        <span class="price">$40.00</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="images/menu-4.png" alt="">
+                    <div class="content">
+                        <h3>delicious food</h3>
+                        <span> Quantity : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span>Price :</span>
+                        <span class="price">$40.00</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="images/menu-5.png" alt="">
+                    <div class="content">
+                        <h3>delicious food</h3>
+                        <span> Quantity : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span>Price :</span>
+                        <span class="price">$40.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="cart-total">
+                <h3 class="title">Cart Total</h3>
+                <div class="box">
+                    <h3 class="subtitle">Subtitle : <span>$200</span> </h3>
+                    <h3 class="total">total : <span>$200</span> </h3>
+
+                    <a href="#" class="btn">proceed to checkout</a>
+                </div>
+            </div> -->
+        </div>
+        <div class="cart-total">
+            <h3 class="title">Cart Total</h3>
+            <div class="box">
+                <h3 class="subtitle">Subtitle : <span>$200</span> </h3>
+                <h3 class="total">total : <span>$200</span> </h3>
+
+                <a href="#" class="btn">proceed to checkout</a>
+            </div>
+        </div>
+    </section>
+    <!-- ================================  Login-form  ============================================ -->
+    <div class="login-form-container">
+        <form action="">
+            <h3>login form</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remenber me</label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>forget password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#">Create an account</a></p>
+        </form>
+    </div>
+    <!-- ================================ Home Section ============================================ -->
+    <section class="home" id="home">
+        <div class="content">
+            <span>Welcom to The Garden Cafe</span>
+            <h3>Where Fresh Flavours Bloom and Come Together.</h3>
+            <p>Experience fresh, farm-to-table cuision in our garden-inspired cafe. come for the food, stay for the
+                atmosphere.</p>
+            <a href="#popular" class="btn">Order Now</a>
+        </div>
+
+        <div class="image">
+            <img src="images/Home-1.png" alt="" class="home-img">
+            <img src="images/" alt="" class="home-parallax-img">
+        </div>
+    </section>
+    <!-- ================================ Category Section ======================================== -->
+    <section class="category">
+        <a href="#" class="box">
+            <img src="images/Cate-1.png" alt="">
+            <h3>Pizza</h3>
+        </a>
+        <a href="#" class="box">
+            <img src="images/Cate-icon-1.png" alt="">
+            <h3>Burger</h3>
+        </a>
+        <a href="#" class="box">
+            <img src="images/Cate-icon-3.png" alt="">
+            <h3>Cake</h3>
+        </a>
+        <a href="#" class="box">
+            <img src="images/Cate-icon-5.png" alt="">
+            <h3>Chicken</h3>
+        </a>
+        <a href="#" class="box">
+            <img src="images/Cate-icon-2.png" alt="">
+            <h3>Coffee</h3>
+        </a>
+        <a href="#" class="box">
+            <img src="images/Cate-6.png" alt="">
+            <h3>Rice</h3>
+        </a>
+    </section>
+    <!-- ================================ Abouts section ========================================== -->
+    <section class="about" id="about">
+        <div class="image">
+            <img src="images/about-icon-1.png" alt="">
+        </div>
+
+        <div class="content">
+            <span>why choose us?</span>
+            <h3 class="title">what's make our food delicious!</h3>
+            <p>Delicious food, cozy ambiance, friendly services, and beautiful garden view, Choose us for an
+                unforgettable
+                dining experience.
+            </p>
+            <a href="#" class="btn">Read More</a>
+            <div class="icon-container">
+                <div class="icons">
+                    <img src="images/about-icon-5.png" alt="" width="40">
+                    <h3>Fast Delivery</h3>
+                </div>
+                <div class="icons">
+                    <img src="images/about-icon-2.png" alt="" width="40">
+                    <h3>Fresh Food</h3>
+                </div>
+                <div class="icons">
+                    <img src="images/about-icon-3.png" alt="" width="40">
+                    <h3>Best Quality</h3>
+                </div>
+                <div class="icons">
+                    <img src="images/about-icon-4.png" alt="" width="40">
+                    <h3>24/7 Support</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================ POPULAR SECTION ========================================= -->
+    <section class="popular" id="popular">
+        <div class="heading">
+            <span>popular food</span>
+            <h3>Our special dishes</h3>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="images/Popular-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious food</h3>
+                    <div class="stars">
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-half-line"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">$40.00 <span>$50.00</span> </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="images/popular-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious food</h3>
+                    <div class="stars">
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-half-line"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">$40.00 <span>$50.00</span> </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="images/popular-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious food</h3>
+                    <div class="stars">
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-half-line"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">$40.00 <span>$50.00</span> </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="images/popular-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious food</h3>
+                    <div class="stars">
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-half-line"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">$40.00 <span>$50.00</span> </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="images/popular-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious food</h3>
+                    <div class="stars">
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-half-line"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">$40.00 <span>$50.00</span> </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="images/popular-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious food</h3>
+                    <div class="stars">
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-half-line"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">$40.00 <span>$50.00</span> </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="images/popular-7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious food</h3>
+                    <div class="stars">
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-half-line"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">$40.00 <span>$50.00</span> </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="images/popular-8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious food</h3>
+                    <div class="stars">
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-half-line"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">$40.00 <span>$50.00</span> </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================ Banner Section ========================================== -->
+    <section class="banner">
+        <div class="row-banner">
+            <div class="content">
+                <span>Dual Combo</span>
+                <h3>Pizza</h3>
+                <p>with cococola and fried</p>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+
+        <div class="grid-banner">
+            <div class="grid">
+                <img src="images/F_Banner-3.jpg" alt="">
+                <div class="content center">
+                    <span>Special offer</span>
+                    <h3>upto 50% off</h3>
+                    <a href="#" class="btn">order now</a>
+                </div>
+            </div>
+            <div class="grid">
+                <img src="images/F_Banner-2.jpg" alt="">
+                <div class="content center">
+                    <span>Special offer</span>
+                    <h3>upto 50% off</h3>
+                    <a href="#" class="btn">order now</a>
+                </div>
+            </div>
+            <div class="grid">
+                <img src="images/F_Banner-1.avif" alt="">
+                <div class="content center">
+                    <span>Special offer</span>
+                    <h3>upto 50% off</h3>
+                    <a href="#" class="btn">order now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================ Menu Section ============================================ -->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>our menu</span>
+            <h3>our top dishes</h3>
+        </div>
+
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="images/popular-7.png" alt="">
+                <div class="content">
+                    <h3>delicious food</h3>
+                    <div class="price">$12.00</div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="images/Menu_1.png" alt="">
+                <div class="content">
+                    <h3>delicious food</h3>
+                    <div class="price">$12.00</div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="images/Menu_2.png" alt="">
+                <div class="content">
+                    <h3>delicious food</h3>
+                    <div class="price">$12.00</div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="images/menu-1.png" alt="">
+                <div class="content">
+                    <h3>delicious food</h3>
+                    <div class="price">$12.00</div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="images/menu-2.png" alt="">
+                <div class="content">
+                    <h3>delicious food</h3>
+                    <div class="price">$12.00</div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="images/menu-3.png" alt="">
+                <div class="content">
+                    <h3>delicious food</h3>
+                    <div class="price">$12.00</div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="images/popular-3.png" alt="">
+                <div class="content">
+                    <h3>delicious food</h3>
+                    <div class="price">$12.00</div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="images/Menu_3.png" alt="">
+                <div class="content">
+                    <h3>delicious food</h3>
+                    <div class="price">$12.00</div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="order" id="order">
+        <div class="heading">
+            <span>order now</span>
+            <h3>fasted home delivery</h3>
+        </div>
+
+        <div class="icon-container">
+            <div class="icons">
+                <img src="images/icons_1.png" alt="">
+                <h3>7:00am to 10:00pm</h3>
+            </div>
+            <div class="icons">
+                <img src="images/Icon_phone.png" alt="">
+                <h3>+855 1234560987</h3>
+            </div>
+            <div class="icons">
+                <img src="images/icon_app_map.png" alt="">
+                <h3>Address, Phnom Penh in cambodia</h3>
+            </div>
+        </div>
+
+        <form action="">
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>your name</span>
+                    <input type="text" name="" id="" placeholder="customer's name">
+                </div>
+                <div class="inputBox">
+                    <span>your number</span>
+                    <input type="number" name="" id="" placeholder="customer's name">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="inputBox">
+                    <span>your order</span>
+                    <input type="text" name="" id="" placeholder="food you want">
+                </div>
+                <div class="inputBox">
+                    <span>how much</span>
+                    <input type="number" name="" id="" placeholder="number of orders">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="inputBox">
+                    <span>your details</span>
+                    <input type="text" name="" id="" placeholder="your message">
+                </div>
+                <div class="inputBox">
+                    <span>pick up time</span>
+                    <input type="datetime-local" name="" id="">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="inputBox">
+                    <textarea placeholder="your address" name="" id="" cols="30" rows="30"></textarea>
+                </div>
+
+                <div class="inputBox">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12863.651113611037!2d104.8863780498505!3d11.62729518582259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310953a5d89e4471%3A0x8d2f6f5e1bcad73c!2sAH1%2C%20Phnom%20Penh!5e1!3m2!1sen!2skh!4v1738380857533!5m2!1sen!2skh"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+
+            <input type="submit" value="proceed to order" class="btn">
+        </form>
+    </section>
+    <!-- ================================ BLOG SECTION ============================================= -->
+    <section class="blogs" id="blogs">
+        <div class="heading">
+            <span>our blogs</span>
+            <h3>our daily stories</h3>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <h3><i class="fa fa-calendar"></i> 02nd Feb 2025</h3>
+                    <img src="images/Blog_1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"> <i class="fas fa-tag"></i> Food /</a>
+                        <a href="#"> <i class="fas fa-tag"></i> burger /</a>
+                        <a href="#"> <i class="fas fa-tag"></i> pizza </a>
+                    </div>
+                    <h3>blogs title gose here...</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, earum.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <h3><i class="fa fa-calendar"></i> 02nd Feb 2025</h3>
+                    <img src="images/Blog_2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"> <i class="fas fa-tag"></i> Food /</a>
+                        <a href="#"> <i class="fas fa-tag"></i> burger /</a>
+                        <a href="#"> <i class="fas fa-tag"></i> pizza </a>
+                    </div>
+                    <h3>blogs title gose here...</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, earum.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <h3><i class="fa fa-calendar"></i> 02nd Feb 2025</h3>
+                    <img src="images/Blog_3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"> <i class="fas fa-tag"></i> Food /</a>
+                        <a href="#"> <i class="fas fa-tag"></i> burger /</a>
+                        <a href="#"> <i class="fas fa-tag"></i> pizza </a>
+                    </div>
+                    <h3>blogs title gose here...</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, earum.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ====================================== FOOTER ================================== -->
+    <section class="footer">
+        <div class="newsletter">
+            <h3>newsletter</h3>
+            <form action="">
+                <input type="email" name="" id="" placeholder="enter your email">
+                <input type="submit" value="subscribe">
+            </form>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <h3>Our Menu</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> Pizza</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Burger</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Chicken</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> pasta</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> and more...</a>
+            </div>
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> Home</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> About</a>
+                <a href="#popular"><i class="fas fa-arrow-right"></i> Popular</a>
+                <a href="#order"><i class="fas fa-arrow-right"></i> order</a>
+                <a href="#blogs"><i class="fas fa-arrow-right"></i> Blogs</a>
+            </div>
+            <div class="box">
+                <h3>Our Menu</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> My order</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> my account</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> My favorites</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> terms of use</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> privacy policy</a>
+            </div>
+
+            <div class="box">
+                <h3>opening hour</h3>
+                <p>Monday : 7:00am to 10:00pm</p>
+                <p>Tuesday : 7:00am to 10:00pm</p>
+                <p>Wednesday : 7:00am to 10:00pm</p>
+                <p>Thursday : 7:00am to 10:00pm</p>
+                <p>Friday : 7:00am to 10:00pm</p>
+                <p>saturday and sunday closed</p>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="share">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                <a href="#"><i class="ri-pinterest-fill"></i></a>
+            </div>
+            <div class="credit">created <span>Fais coding</span> | all rights reserved!</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
